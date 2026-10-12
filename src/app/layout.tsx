@@ -8,9 +8,6 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Kairos Nexus Global | Skilled African Talent, Starting in Nigeria",
   description: "Kairos connects companies with skilled African professionals through human-led matching, starting in Nigeria, with potential savings of up to 70% compared with equivalent U.S. hiring costs.",
-  icons: {
-    icon: "/logo.png",
-  },
 };
 
 export default function RootLayout({
