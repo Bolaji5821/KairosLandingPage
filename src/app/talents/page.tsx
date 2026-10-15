@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { getPublicTalents, PublicTalent } from "@/lib/api";
 import { formatProfileLabel, formatProfileLocation } from "@/lib/format-profile-label";
+import { prioritizePublicTalents } from "@/lib/prioritize-public-talents";
 
 const shuffle = <T,>(items: T[]) => {
   const shuffled = [...items];
@@ -39,9 +40,6 @@ const getRandomSkills = (talents: PublicTalent[], limit = 9) => {
 
   return selected;
 };
-
-const prioritizeProfilesWithImages = (talents: PublicTalent[]) =>
-  [...talents].sort((a, b) => Number(Boolean(b.profilePicture?.trim())) - Number(Boolean(a.profilePicture?.trim())));
 
 export default function TalentsPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -98,7 +96,7 @@ export default function TalentsPage() {
           limit: 20,
         });
         if (!cancelled) {
-          setPublicTalents(prioritizeProfilesWithImages(response.data));
+          setPublicTalents(prioritizePublicTalents(response.data));
           setRandomSkills(getRandomSkills(response.data));
           setPagination({
             total: response.pagination.total,

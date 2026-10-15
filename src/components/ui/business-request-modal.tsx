@@ -303,7 +303,7 @@ export function BusinessRequestModal({
     event.preventDefault();
     if (!termsAccepted) {
       setConsentError(
-        "You must accept the Terms of Service and Privacy Policy before submitting your Scope of Work.",
+        "You must accept the Website Terms of Use and Privacy Notice before submitting your Scope of Work.",
       );
       return;
     }
@@ -367,8 +367,8 @@ export function BusinessRequestModal({
                   </p>
                   <h2 className="mt-1 text-xl font-bold text-zinc-950 dark:text-white">
                     {activePolicy === "terms"
-                      ? "Terms of Service"
-                      : "Privacy Policy"}
+                      ? "Website Terms of Use"
+                      : "Privacy Notice"}
                   </h2>
                 </div>
                 <button
@@ -391,8 +391,8 @@ export function BusinessRequestModal({
                 }
                 title={
                   activePolicy === "terms"
-                    ? "Terms of Service"
-                    : "Privacy Policy"
+                    ? "Website Terms of Use"
+                    : "Privacy Notice"
                 }
                 onLoad={() =>
                   policyFrameRef.current?.contentWindow?.scrollTo(0, 0)
@@ -406,7 +406,7 @@ export function BusinessRequestModal({
                     onClick={() => openPolicy("privacy")}
                     className="inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-[#DE028E] px-6 py-3 font-bold text-white transition-colors hover:bg-[#C00079] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DE028E] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-zinc-950 sm:w-auto"
                   >
-                    Next: Privacy Policy
+                    Next: Privacy Notice
                   </button>
                 ) : (
                   <button
@@ -826,7 +826,7 @@ export function BusinessRequestModal({
                         }}
                         className="font-bold text-[#C00079] underline-offset-2 hover:underline dark:text-[#FEC2E8]"
                       >
-                        Terms of Service
+                        Website Terms of Use
                       </button>{" "}
                       and{" "}
                       <button
@@ -837,7 +837,7 @@ export function BusinessRequestModal({
                         }}
                         className="font-bold text-[#C00079] underline-offset-2 hover:underline dark:text-[#FEC2E8]"
                       >
-                        Privacy Policy
+                        Privacy Notice
                       </button>
                       .
                     </span>

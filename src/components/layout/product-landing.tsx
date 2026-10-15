@@ -15,7 +15,7 @@ import { getAppLoginUrl, getAppSignupUrl } from "@/lib/app-links";
 import { Cofounders } from "./cofounders";
 import { GsapScrollExperience } from "./gsap-scroll-experience";
 import { LandingHero } from "./landing-hero";
-import { CredibilityRail, TopCredibilityRail } from "./credibility-rail";
+import { TopCredibilityRail } from "./credibility-rail";
 import { ProductPreview, type PreviewKind } from "./product-preview";
 import { CompanyCapabilities } from "./company-capabilities";
 
@@ -215,7 +215,6 @@ export function ProductLanding({ audience }: { audience: Audience }) {
       <div className="product-landing">
         <TopCredibilityRail />
         <LandingHero audience={audience} />
-        <CredibilityRail />
 
         <section
           id="how-it-works"

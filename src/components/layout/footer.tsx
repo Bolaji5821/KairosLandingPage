@@ -69,10 +69,10 @@ export function Footer() {
     {
       title: "Legal",
       links: [
-        { name: "Privacy policy", href: "/privacy-policy" },
-        { name: "Terms of service", href: "/terms-of-service" },
-        { name: "Data governance", href: "/privacy-policy#section-9" },
-        { name: "Cookie policy", href: "/privacy-policy#section-13" },
+        { name: "Privacy notice", href: "/privacy-policy" },
+        { name: "Website terms of use", href: "/terms-of-service" },
+        { name: "Security & compliance", href: "/security" },
+        { name: "Cookie notice", href: "/privacy-policy#section-11" },
       ],
     },
   ];

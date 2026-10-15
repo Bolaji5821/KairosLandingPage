@@ -59,11 +59,11 @@ export function CookieConsent() {
                 <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
                   We use cookies to improve your experience on our platform. By continuing to use our website, you agree to our{" "}
                   <Link href="/privacy-policy" className="text-[#C00079] font-bold hover:underline dark:text-[#FEC2E8]">
-                    Privacy Policy
+                    Privacy Notice
                   </Link>{" "}
                   and{" "}
                   <Link href="/terms-of-service" className="text-[#C00079] font-bold hover:underline dark:text-[#FEC2E8]">
-                    Terms of Service
+                    Website Terms of Use
                   </Link>
                   .
                 </p>

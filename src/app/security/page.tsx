@@ -3,7 +3,7 @@ import { SecurityClient } from "./SecurityClient";
 
 export const metadata: Metadata = {
   title: "Security & Compliance | Kairos Nexus Global",
-  description: "Kairos Nexus Global security infrastructure, ethical AI principles, global compliance standards, data governance, and breach response protocols.",
+  description: "Kairos Nexus Global's current approach to information security, responsible AI, compliance, and incident response.",
 };
 
 export default function SecurityPage() {

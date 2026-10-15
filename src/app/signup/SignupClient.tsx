@@ -377,11 +377,11 @@ export function SignupClient() {
               <label className="text-sm text-zinc-600 dark:text-zinc-400 cursor-pointer">
                 I agree to the{" "}
                 <Link href="/terms-of-service" className="text-[#C2185B] font-medium hover:underline">
-                  Terms of Service
+                  Website Terms of Use
                 </Link>{" "}
                 and{" "}
                 <Link href="/privacy-policy" className="text-[#C2185B] font-medium hover:underline">
-                  Privacy Policy
+                  Privacy Notice
                 </Link>
               </label>
             </div>

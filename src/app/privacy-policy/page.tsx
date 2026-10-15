@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PrivacyPolicyClient } from "./PrivacyPolicyClient";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Kairos Nexus Global",
-  description: "Privacy Policy for Kairos Nexus Global, how we collect, use, protect, and govern your personal information across our global talent marketplace.",
+  title: "Privacy Notice | Kairos Nexus Global",
+  description: "Kairos Nexus Global Privacy Notice explaining how we collect, use, share, and protect personal information.",
 };
 
 export default function PrivacyPolicyPage() {

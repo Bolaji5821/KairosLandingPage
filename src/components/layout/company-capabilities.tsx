@@ -13,6 +13,7 @@ import {
 } from "react-icons/pi";
 import { getPublicTalents, type PublicTalent } from "@/lib/api";
 import { formatProfileLabel } from "@/lib/format-profile-label";
+import { prioritizePublicTalents } from "@/lib/prioritize-public-talents";
 
 const capabilities = [
   {
@@ -43,13 +44,7 @@ const capabilities = [
 
 function selectDistinctRoles(talents: PublicTalent[]) {
   const roles = new Set<string>();
-  const prioritized = [...talents].sort((a, b) => {
-    const score = (talent: PublicTalent) =>
-      (talent.profilePicture?.trim() ? 4 : 0) +
-      (talent.user?.verifiedRoles?.length ? 2 : 0) +
-      (talent.user?.isKycDone ? 1 : 0);
-    return score(b) - score(a);
-  });
+  const prioritized = prioritizePublicTalents(talents);
 
   const selected = prioritized.filter((talent) => {
     const title = getTalentTitle(talent);
